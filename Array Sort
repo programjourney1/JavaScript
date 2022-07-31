@@ -1,0 +1,39 @@
+//accending
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+
+//decending
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+
+//find highest number (alt method)
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+// find lowest num
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+
+//find max (normal way)
+function myArrayMax(arr) {
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+//find min
+function myArrayMin(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
