@@ -1,0 +1,46 @@
+//tester
+console.log("hi");
+
+let ar = [1, 2, 2, 3, 4];
+console.log(ar);
+l = ar.length;
+////////// remove duplicates
+function removeDuplicates(ar) {
+    return ar.filter((item,
+        index) => ar.indexOf(item) === index);
+}
+console.log(removeDuplicates(ar));
+
+////// print each item on line
+for (let i = 0; i < ar.length; i++) {
+    console.log(ar[i]);
+  }
+//////////
+ar.push(6);
+/////total
+const totalNum = ar.reduce((tot,item) => {
+    return tot + item
+}, 0)
+/////////fizbuzz
+for ( nom = 0; nom <= 20; nom++){
+    if ((nom%3==0) && (nom%2==0)){console.log("FizzBUzz")}
+else if (nom%3 ==0){console.log("Fizz")}
+else if (nom%2 ==0){console.log("Buzz")}
+else {
+console.log(nom)}}
+
+
+////////
+console.log("length", l);
+console.log(ar[0]);
+console.log(totalNum);
+console.log(ar);
+/////array for in loop
+let arr = {
+    1: "John",
+    2: "Doe",
+    3: 25
+  };
+  for (thing in arr) {
+    console.log(arr[thing]);
+  }
